@@ -40,7 +40,3 @@ const productDetails = (firstProduct, secondProduct) => [
 ];
 
 module.exports = productDetails;
-// const array = productDetails('Item 1', 'Item 2');
-// console.log(
-//   array[1].details.productId.substring(array[1].details.productId.length - 3)
-// );
