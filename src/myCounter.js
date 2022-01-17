@@ -18,13 +18,16 @@
 
 const myCounter = () => {
   var myArray = [];
-  for (var counter = 0; counter <= 3; counter += 1) {
-    myArray.push(counter);
-    for (var counter = 2; counter <= 3; counter += 1) {
-      myArray.push(counter);
+  // Uma vez no primeiro loop e 2 vezes no segundo ate alcançar a condição e voltar pro primeiro assim resetando a contagem do segundo e acrescendo 1 no primeiro.
+  for (var firstCounter = 0; firstCounter <= 3; firstCounter += 1) {
+    myArray.push(firstCounter);
+    for (var secondCounter = 2; secondCounter <= 3; secondCounter += 1) {
+      myArray.push(secondCounter);
     }
   }
   return myArray;
 };
 
 module.exports = myCounter;
+
+console.log(myCounter());
